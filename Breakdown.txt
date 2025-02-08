@@ -4,5 +4,15 @@ Idea:
 Target Audience:
 - Students
 
+Roles:
+Presentation:
+- Zoe
+Frontend:
+- Pany
+Backend:
+- Kevin
+- Josh
+- Harishanan
+
 Features:
 - 
