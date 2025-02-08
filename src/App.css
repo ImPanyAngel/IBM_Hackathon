@@ -1,0 +1,150 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bank-container {
+    grid-column: 1;
+    grid-row: 1;
+
+    background-color: whitesmoke;
+    color: black;
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-container {
+    grid-column: 1;
+    grid-row: 2;
+
+    background-color: whitesmoke;
+    color: black;
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.categories-container {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+    background-color: whitesmoke;
+    color: black;
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollview {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.15s ease;
+}
+
+.button-container:active {
+    transform: scale(105%);
+    transition: all 0.15s ease;
+}
+
+.button-text {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-button,
+.right-button {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.left-button:active,
+.right-button:active {
+    transform: scale(110%);
+    transition: all 0.15s ease;
+}
+
+.left-button {
+    left: 125px;
+    top: 250px;
+}
+
+.right-button {
+    left: 570px;
+    top: 250px;
+}
+
+.direction-button-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.add-btn {
+    grid-column: 1;
+    grid-row: 3;
+
+    justify-self: center;
+    align-self: center;
+
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.add-btn-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-title {
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.chatbot-text-area {
+    width: 100%;
+    height: 200px;
+}
