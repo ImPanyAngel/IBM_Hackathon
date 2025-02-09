@@ -10,9 +10,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     private Long id;
-    private String username;
-    private String password;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -29,5 +34,10 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    private String username;
+    private String password;
+
+
 
 }
